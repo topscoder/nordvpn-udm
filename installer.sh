@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Load config
-. ../config.env
+curl https://github.com/topscoder/nordvpn-udm/blob/main/config.env --out config.env
+. ./config.env
 
 # Install split-vpn
 echo " "
