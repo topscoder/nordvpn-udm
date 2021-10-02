@@ -1,7 +1,17 @@
 #!/bin/sh
 
 # Load environment configuration
-. ../config.env
+# . ../config.env
+
+DATA_BASEDIR="/mnt/data"
+SPLITVPN_DIR="${DATA_BASEDIR}/split-vpn"
+ON_BOOT_DIR="${DATA_BASEDIR}/on_boot.d"
+NORDVPN_WORKDIR="${SPLITVPN_DIR}/openvpn/nordvpn"
+NORDVPN_FLAGS=""
+LOG_FILE="${NORDVPN_WORKDIR}/nordvpn.log"
+OVPN_FILE="${NORDVPN_WORKDIR}/nordvpn.ovpn"
+NORDVPN_CREDENTIALS_FILE="${NORDVPN_WORKDIR}/username_password.txt"
+
 
 # Load configuration and run openvpn
 . "${NORDVPN_WORKDIR}/vpn.conf"
