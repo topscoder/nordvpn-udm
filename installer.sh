@@ -40,7 +40,7 @@ do
            echo " "
            break;;
 
-   * )     echo "‼️  Dude, just enter the full URL to the .ovpn file starting with http, please.";  exit;;
+   * )     echo "‼️  Dude, just enter the full URL to the .ovpn file starting with http, please.";  break;;
   esac
 done
 
