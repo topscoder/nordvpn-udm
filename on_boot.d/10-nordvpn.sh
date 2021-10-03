@@ -26,3 +26,4 @@ nohup openvpn --config ${OVPN_FILE} \
               --script-security 2 \
               --ping-restart 15 \
               --mute-replay-warnings > ${LOG_FILE} 2>&1 &
+              

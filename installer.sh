@@ -40,7 +40,7 @@ do
            echo " "
            break;;
 
-   * )     echo "‼️  Dude, just enter the full URL to the .ovpn file starting with http, please.";  exit;;
+   * )     echo "‼️  Dude, just enter the full URL to the .ovpn file starting with http, please.";;
   esac
 done
 
@@ -51,12 +51,12 @@ done
 sed -i 's/auth-user-pass/auth-user-pass \/mnt\/data\/split-vpn\/openvpn\/nordvpn\/username_password.txt/' ${OVPN_FILE}
 
 echo " "
-read -p "👉     Enter your VPN username
+read -s "👉     Enter your VPN username
 -> " username
 echo "$username" > ${NORDVPN_CREDENTIALS_FILE}
 
 echo " "
-read -p "👉     Enter your VPN password
+read -s "👉     Enter your VPN password
 -> " password
 echo "$password" >> ${NORDVPN_CREDENTIALS_FILE}
 
