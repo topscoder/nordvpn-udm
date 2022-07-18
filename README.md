@@ -29,7 +29,7 @@ to provide a persistent service and runs using the OpenVPN service.
 1. Run the installer script to install `nordvpn` and the startup script on your UDM.
    
    ```sh
-   curl -sSL https://raw.githubusercontent.com/topscoder/nordvpn-udm/master/installer.sh | sh
+   curl -sSL https://raw.githubusercontent.com/topscoder/nordvpn-udm/main/installer.sh | sh
    ```
 1. Follow the on-screen steps to configure `nordvpn` and connect it to your network.
 
