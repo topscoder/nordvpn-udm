@@ -15,6 +15,12 @@ to provide a persistent service and runs using the OpenVPN service.
 ### Prerequisites
 
 - You need to be able to connect to your UDM / UDM Pro via SSH in order to run this installer.
+  - Go to UDM Home
+  - Click "Settings"
+  - Click "System"
+  - Scroll Down to the bottom of the list
+  - Click select "SSH", agree to the license
+  - Set a password
 - You need an OpenVPN configuration file (.ovpn) from NordVPN. <br>
    You can do so by downloading a configuration file at the [NordVPN Server Tools](https://nordvpn.com/servers/tools/) page.
 
